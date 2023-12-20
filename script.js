@@ -1,13 +1,35 @@
-function getFormvalue() {
-    //Write your code here
-	let form = document.getElementById('form1');
-let firstInput = form.elements('fname');
-	let lastInput = form.elemenrs('lname');
+// function getFormvalue() {
+//     //Write your code here
+// 	var form = document.getElementById('form1');
+// var firstInput = form.elements['fname'];
+// 	var lastInput = form.elemenrs['lname'];
 
 
-	let firstName = firstInput.value;
-	let lastName = lastInput.value;
+// 	var firstName = firstInput.value;
+// 	var lastName = lastInput.value;
 
-	alert("First name: " + firstName + "\nLast name: " + lastName);
+// 	alert("First name: " + firstName + "\nLast name: " + lastName);
+// 	return false;
 	
+// }
+
+
+function getFormvalue() {
+  // Get the form element
+  var form = document.getElementById('form1');
+
+  // Access the input elements by their names
+  var firstNameInput = form.elements['fname'];
+  var lastNameInput = form.elements['lname'];
+
+  // Get the values entered by the user
+  var firstName = firstNameInput.value;
+  var lastName = lastNameInput.value;
+
+  // Display the first and last names using alert
+  alert("First name: " + firstName + "\nLast name: " + lastName);
+
+  // Prevent the form from submitting (optional)
+  return false;
 }
+
